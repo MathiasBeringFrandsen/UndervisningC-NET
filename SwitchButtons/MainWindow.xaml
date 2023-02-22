@@ -1,0 +1,27 @@
+﻿<Window x:Class="SwitchButtons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchButtons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="skiftØverst" Grid.Column="1" Content="Skift Øverste" HorizontalAlignment="Center" VerticalAlignment="Center" Width="190" Height="115" FontSize="30" Click="switchTop"/>
+        <Button x:Name="skiftNederst" Grid.Column="1" Content="Skift Nederste" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="115" Width="190" FontSize="30" Click="switchBottom"/>
+        <Label x:Name="topRight" Grid.Column="2" Content="Hope" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        <Label x:Name="bottomRight" Grid.Column="2" Content="Storm" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20"/>
+        <Label x:Name="bottomLeft" Content="Iceman" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20"/>
+        <Label x:Name="topLeft" Content="Rogue" HorizontalAlignment="Left" Margin="114,96,0,0" VerticalAlignment="Top" FontSize="20"/>
+
+    </Grid>
+</Window>
