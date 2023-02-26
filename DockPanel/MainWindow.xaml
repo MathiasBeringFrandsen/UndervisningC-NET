@@ -6,5 +6,11 @@
         xmlns:local="clr-namespace:DockPanel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <DockPanel LastChildFill="False"/>
+    <DockPanel LastChildFill="True">
+        <Button x:Name="eastButton" Content="East" Width="NaN" Click="addName"/>
+        <Button x:Name="westButton" Content="West" Width="40" DockPanel.Dock="Right" Click="addName"/>
+        <Button x:Name="southButton" Content="South" Width="NaN" DockPanel.Dock="Bottom" Click="addName"/>
+        <Button x:Name="NorthButton" Content="North" Width="NaN" DockPanel.Dock="Top" Click="addName"/>
+        <TextBox x:Name="directionBox" TextWrapping="Wrap" Text="" Width="100"/>
+    </DockPanel>
 </Window>

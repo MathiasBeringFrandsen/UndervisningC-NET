@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DockPanel
+namespace StatusMenuBar
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,12 +23,6 @@ namespace DockPanel
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void addName(object sender, RoutedEventArgs e)
-        {
-            directionBox.AppendText(((Button)sender).Content.ToString() + "\n");
-
         }
     }
 }
