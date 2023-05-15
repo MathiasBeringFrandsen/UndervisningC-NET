@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lektion3_Værksted
 {
-    internal class Mekaniker : Medarbejder
+    public class Mekaniker : Medarbejder
     {
         public double Timeloen { get; set; }
         public int Svendeprøve { get; set; }

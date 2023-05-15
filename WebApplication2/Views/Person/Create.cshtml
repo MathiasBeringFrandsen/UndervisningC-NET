@@ -1,0 +1,23 @@
+﻿@model WebApplication2.Models.Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.EditorFor(model => model.FirstName)
+        @Html.EditorFor(model => model.LastName)
+        @Html.EditorFor(model => model.Age)
+        <input type="submit" value="Gem" />
+    }
+</body>
+</html>
